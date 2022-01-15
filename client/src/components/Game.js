@@ -1245,7 +1245,7 @@ const Game = (props) => {
                         {/* PLAYER 1 VIEW */}
                         {currentUser === 'Player 1' && <>    
                         <div className='player2Deck' style={{pointerEvents: 'none'}}>
-                            <p className='playerDeckText'>Player 2</p>
+                            <p className='playerDeckText'>Player Dos</p>
                             {player2Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1271,7 +1271,7 @@ const Game = (props) => {
                         </div>
                         <br />
                         <div className='player1Deck' style={turn === 'Player 1' ? null : {pointerEvents: 'none'}}>
-                            <p className='playerDeckText'>Player 1</p>
+                            <p className='playerDeckText'>Player Uno</p>
                             {player1Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1309,7 +1309,7 @@ const Game = (props) => {
                         {/* PLAYER 2 VIEW */}
                         {currentUser === 'Player 2' && <>
                         <div className='player1Deck' style={{pointerEvents: 'none'}}>
-                            <p className='playerDeckText'>Player 1</p>
+                            <p className='playerDeckText'>Player Uno</p>
                             {player1Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1335,7 +1335,7 @@ const Game = (props) => {
                         </div>
                         <br />
                         <div className='player2Deck' style={turn === 'Player 1' ? {pointerEvents: 'none'} : null}>
-                            <p className='playerDeckText'>Player 2</p>
+                            <p className='playerDeckText'>Player Dos</p>
                             {player2Deck.map((item, i) => (
                                 <img
                                     key={i}
