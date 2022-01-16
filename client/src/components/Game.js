@@ -14,8 +14,6 @@ import draw2CardSound from '../assets/sounds/draw2-sound.mp3'
 import wildCardSound from '../assets/sounds/wild-sound.mp3'
 import draw4CardSound from '../assets/sounds/draw4-sound.mp3'
 import gameOverSound from '../assets/sounds/game-over-sound.mp3'
-import player1cool from '../assets/Player1.png'
-import player2cool from '../assets/Player2.png'
 
 //NUMBER CODES FOR ACTION CARDS
 //SKIP - 404
@@ -1247,7 +1245,7 @@ const Game = (props) => {
                         {/* PLAYER 1 VIEW */}
                         {currentUser === 'Player 1' && <>    
                         <div className='player2Deck' style={{pointerEvents: 'none'}}>
-                            <p className='playerDeckText'><img src="player2cool"></img></p>
+                            <p className='playerDeckText'><img src="https://cdn.glitch.global/3943dd29-ab7d-4dbc-888d-3bca1672b628/Player2.png?v=1642308838625"></img></p>
                             {player2Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1273,7 +1271,7 @@ const Game = (props) => {
                         </div>
                         <br />
                         <div className='player1Deck' style={turn === 'Player 1' ? null : {pointerEvents: 'none'}}>
-                            <p className='playerDeckText'><img src="player1cool"></img></p>
+                            <p className='playerDeckText'><img src="https://cdn.glitch.global/3943dd29-ab7d-4dbc-888d-3bca1672b628/Player1.png?v=1642308838625"></img></p>
                             {player1Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1311,7 +1309,7 @@ const Game = (props) => {
                         {/* PLAYER 2 VIEW */}
                         {currentUser === 'Player 2' && <>
                         <div className='player1Deck' style={{pointerEvents: 'none'}}>
-                            <p className='playerDeckText'><img src="player1cool"></img></p>
+                            <p className='playerDeckText'><img src="https://cdn.glitch.global/3943dd29-ab7d-4dbc-888d-3bca1672b628/Player1.png?v=1642308838625"></img></p>
                             {player1Deck.map((item, i) => (
                                 <img
                                     key={i}
@@ -1337,7 +1335,7 @@ const Game = (props) => {
                         </div>
                         <br />
                         <div className='player2Deck' style={turn === 'Player 1' ? {pointerEvents: 'none'} : null}>
-                            <p className='playerDeckText'><img src="player2cool"></img></p>
+                            <p className='playerDeckText'><img src="https://cdn.glitch.global/3943dd29-ab7d-4dbc-888d-3bca1672b628/Player2.png?v=1642308838625"></img></p>
                             {player2Deck.map((item, i) => (
                                 <img
                                     key={i}
