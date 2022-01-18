@@ -1218,10 +1218,8 @@ const Game = (props) => {
     return (
         <div className={`Game backgroundColorR backgroundColor${currentColor}`}>
             {(!roomFull) ? <>
-
                 <div className='topInfo'>
                     <img src={require('../assets/logo.png').default} />
-                    <h1>Game Code: {room}</h1>
                     <span>
                         <button className='game-button green' onClick={() => setSoundMuted(!isSoundMuted)}>{isSoundMuted ? <span className="material-icons">volume_off</span> : <span className="material-icons">volume_up</span>}</button>
                         <button className='game-button green' onClick={() => {
@@ -1372,9 +1370,7 @@ const Game = (props) => {
                     </div> }
                 </> }
             </> : <h1>Room full</h1> }
-
             <br />
-            <a href='/'><button className="game-button red">QUIT</button></a>
         </div>
     )
 }
