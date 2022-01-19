@@ -1220,22 +1220,10 @@ const Game = (props) => {
             {(!roomFull) ? <>
                 <div className='topInfo'>
                     <img src={require('../assets/logo.png').default} />
-                    <span>
-                        <button className='game-button green' onClick={() => setSoundMuted(!isSoundMuted)}>{isSoundMuted ? <span className="material-icons">volume_off</span> : <span className="material-icons">volume_up</span>}</button>
-                        <button className='game-button green' onClick={() => {
-                            if(isMusicMuted)
-                                playBBgMusic()
-                            else
-                                pause()
-                            setMusicMuted(!isMusicMuted)
-                        }}>{isMusicMuted ? <span className="material-icons">music_off</span> : <span className="material-icons">music_note</span>}</button>
-                    </span>
                 </div>
-
                 {/* PLAYER LEFT MESSAGES */}
                 {users.length===1 && currentUser === 'Player 2' && <h1 className='topInfoText'>Player 1 has left the game.</h1> }
                 {users.length===1 && currentUser === 'Player 1' && <h1 className='topInfoText'>Waiting for Player 2 to join the game.</h1> }
-
                 {users.length===2 && <>
 
                     {gameOver ? <div>{winner !== '' && <><h1>GAME OVER</h1><h2>{winner} wins!</h2></>}</div> :
