@@ -11,9 +11,9 @@ const Homepage = () => {
                 <img src={require('../assets/logo.png').default} width='200px' />
                 <div className='homepage-form'>
                     <div className='homepage-join'>
-                        <Link to={`/play?roomCode=Lobby1`}><button className="game-button #ff9800">Lobby1</button></Link>
-                        <Link to={`/play?roomCode=Lobby2`}><button className="game-button #ff9800">Lobby2</button></Link>
-                        <Link to={`/play?roomCode=Lobby3`}><button className="game-button #ff9800">Lobby3</button></Link>
+                        <Link to={`/play?roomCode=Lobby1`}><button className="game-button orange">Lobby1</button></Link>
+                        <Link to={`/play?roomCode=Lobby2`}><button className="game-button orange">Lobby2</button></Link>
+                        <Link to={`/play?roomCode=Lobby3`}><button className="game-button orange">Lobby3</button></Link>
 
                     </div>
                 </div>
